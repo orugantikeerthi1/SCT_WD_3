@@ -1,0 +1,153 @@
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#1d2671,#c33764);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  color:white;
+}
+
+.quiz-container{
+  width:100%;
+  max-width:750px;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(12px);
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.top-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+.top-bar h1{
+  font-size:28px;
+}
+
+.timer{
+  background:#fff;
+  color:#333;
+  padding:10px 15px;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+.question-count{
+  margin-bottom:15px;
+  color:#ddd;
+}
+
+#question{
+  margin-bottom:20px;
+  line-height:1.5;
+}
+
+#question-type{
+  margin-bottom:15px;
+  font-size:14px;
+  color:#ffe082;
+}
+
+.option{
+  background:white;
+  color:#222;
+  padding:15px;
+  border-radius:12px;
+  margin-bottom:15px;
+  cursor:pointer;
+  transition:0.3s;
+  border:3px solid transparent;
+}
+
+.option:hover{
+  transform:scale(1.02);
+  background:#f2f2f2;
+}
+
+.option.selected{
+  border-color:#00e5ff;
+  background:#dffcff;
+}
+
+#fill-input{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  margin-bottom:20px;
+  display:none;
+  font-size:16px;
+}
+
+#next-btn{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:#00e5ff;
+  color:#111;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+#next-btn:hover{
+  background:#00bcd4;
+}
+
+.hidden{
+  display:none;
+}
+
+#result-box{
+  text-align:center;
+}
+
+.score-circle{
+  width:160px;
+  height:160px;
+  margin:25px auto;
+  border-radius:50%;
+  background:conic-gradient(#00e676 0% 75%, #ffffff33 75% 100%);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:40px;
+  font-weight:bold;
+}
+
+#result-box button{
+  margin-top:20px;
+  padding:15px 30px;
+  border:none;
+  border-radius:10px;
+  background:#ffeb3b;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.correct{
+  background:#4caf50 !important;
+  color:white !important;
+}
+
+.wrong{
+  background:#f44336 !important;
+  color:white !important;
+}

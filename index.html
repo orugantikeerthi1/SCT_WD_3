@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate Quiz Arena</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="quiz-container">
+
+    <div class="top-bar">
+      <h1>🧠 Ultimate Quiz Arena</h1>
+      <div class="timer">⏳ Time: <span id="time">20</span>s</div>
+    </div>
+
+    <div id="quiz-box">
+
+      <div class="question-count">
+        Question <span id="current-q">1</span> /
+        <span id="total-q">5</span>
+      </div>
+
+      <h2 id="question">Question Here</h2>
+
+      <div id="question-type"></div>
+
+      <div id="options-box"></div>
+
+      <input type="text" id="fill-input" placeholder="Type your answer..." />
+
+      <button id="next-btn">Next Question</button>
+    </div>
+
+    <div id="result-box" class="hidden">
+      <h2>🎉 Quiz Finished!</h2>
+
+      <div class="score-circle">
+        <span id="score">0</span>
+      </div>
+
+      <p id="score-text"></p>
+
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
