@@ -211,7 +211,7 @@ function showResult() {
 
   resultBox.classList.remove("hidden");
 
-  // FIXED LINE
+
   scoreEl.innerText = `${score}/${quizData.length}`;
 
   let percentage = (score / quizData.length) * 100;
